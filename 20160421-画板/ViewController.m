@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "HSPaintView.h"
+#import "HSHandleImageView.h"
+
 
 @interface ViewController ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet HSPaintView *paintView;
@@ -60,7 +62,9 @@
     NSLog(@"%s",__func__);
 }
 #endif
-
+/**
+ 选中图片的时候调用
+ */
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
     /**
      {
@@ -70,12 +74,15 @@
      }
      */
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
-    [self.paintView setImage:image];
-//    UIImageView *imageView = [[UIImageView alloc]initWithFrame:self.paintView.frame];
-//    [imageView setImage:image];
-//    [self.paintView addSubview:imageView];
-    
-    NSLog(@"%@",info);
+    HSHandleImageView *handleView = [[HSHandleImageView alloc]initWithFrame:self.paintView.frame];
+    /*
+     回调，进行传值,定义block的具体内容
+     */
+    [handleView setBlock:^(UIImage *image){
+        [self.paintView setImage:image];
+    }];
+    [handleView setImage:image];//将选中的图片显示到handleView
+    [self.view addSubview:handleView];
     [self dismissViewControllerAnimated:YES completion:^{
         //
     }];

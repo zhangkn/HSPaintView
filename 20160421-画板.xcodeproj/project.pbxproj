@@ -20,6 +20,7 @@
 		E1B5B9C41CC8C773001AFB31 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B5B9C01CC8C773001AFB31 /* MBProgressHUD+MJ.m */; };
 		E1B5B9C51CC8C773001AFB31 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E1B5B9C11CC8C773001AFB31 /* MBProgressHUD.bundle */; };
 		E1B5B9C61CC8C773001AFB31 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B5B9C31CC8C773001AFB31 /* MBProgressHUD.m */; };
+		E1F2A7BC1CC9AA7D00BD5505 /* HSHandleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F2A7BB1CC9AA7D00BD5505 /* HSHandleImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		E1B5B9C11CC8C773001AFB31 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		E1B5B9C21CC8C773001AFB31 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		E1B5B9C31CC8C773001AFB31 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		E1F2A7BA1CC9AA7D00BD5505 /* HSHandleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSHandleImageView.h; sourceTree = "<group>"; };
+		E1F2A7BB1CC9AA7D00BD5505 /* HSHandleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSHandleImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				E1B5B9B51CC8B182001AFB31 /* HSPaintView.h */,
+				E1F2A7BA1CC9AA7D00BD5505 /* HSHandleImageView.h */,
+				E1F2A7BB1CC9AA7D00BD5505 /* HSHandleImageView.m */,
 				E1B5B9B61CC8B182001AFB31 /* HSPaintView.m */,
 			);
 			name = View;
@@ -337,6 +342,7 @@
 				E1B5B9C41CC8C773001AFB31 /* MBProgressHUD+MJ.m in Sources */,
 				E1B5B9BD1CC8BB98001AFB31 /* HSPaintPath.m in Sources */,
 				E1B5B9861CC8A492001AFB31 /* ViewController.m in Sources */,
+				E1F2A7BC1CC9AA7D00BD5505 /* HSHandleImageView.m in Sources */,
 				E1B5B9831CC8A492001AFB31 /* AppDelegate.m in Sources */,
 				E1B5B9B71CC8B182001AFB31 /* HSPaintView.m in Sources */,
 				E1B5B9801CC8A492001AFB31 /* main.m in Sources */,

@@ -103,8 +103,8 @@
     //3.关闭
     UIGraphicsEndImageContext();
     //4\保存
-    //    NSData *data = UIImagePNGRepresentation(newImage);
-    //    [data writeToFile:@"/Users/devzkn/Desktop/layer.png" atomically:YES];
+//        NSData *data = UIImagePNGRepresentation(newImage);
+//        [data writeToFile:@"/Users/devzkn/Desktop/layer.png" atomically:YES];
     //保存到用户相册里面
     UIImageWriteToSavedPhotosAlbum(newImage, self, @selector(image:didFinishSavingWithError:contextInfo:), context);    
 }
